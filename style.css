@@ -323,14 +323,16 @@ body.collapsed .expand-btn svg {
 
 /* Style for main content area */
 .main-content {
-  margin-left: 250px; /* Adjust if the sidebar width changes */
+  margin-left: 250px; /* Adjust if needed */
+  width: 740px; /* Set the width to match the embedded Google Doc */
   flex-grow: 1;
   padding: 20px;
-  overflow-y: auto; /* Ensures content is scrollable */
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
   align-items: center; /* Center content horizontally */
 }
+
 
 /* existing CSS... */
 
@@ -382,11 +384,6 @@ body.collapsed .main-content {
 @media (max-width: 768px), (body.collapsed) {
   .sidebar {
     width: 5rem; /* Adjust to your collapsed sidebar width */
-  }
-
-  .main-content {
-    margin-left: 5rem; /* Adjust to match the collapsed sidebar width */
-    padding-top: 100px; /* Adjust if necessary */
   }
 
   .sidebar-content.active {
